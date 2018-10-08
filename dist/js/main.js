@@ -1,5 +1,5 @@
 // Responsive nav
-import $ from 'jquery';
+
 
 $(function() {
 	menu = $('nav ul');
