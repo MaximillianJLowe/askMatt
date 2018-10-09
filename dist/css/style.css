@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+/* CSS variables set for use wherever */
+:root {
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: #252529;
@@ -12,6 +21,11 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none; /* gets rid of underline default for link */
+  color: #cccc;
+}
+
 /* Section */
 
 .section {
@@ -20,12 +34,13 @@ img {
 
 .section-head {
   font-size: 2.5rem;
-  margin:L 0;
+  margin: 0;
 }
 
-.section {
+.section h3 {
   font-size: 2rem;
 }
+
 /* Showcase */
 #showcase {
   margin:0;
@@ -51,7 +66,7 @@ img {
   font-size 2rem;
 }
 
-/* Utility Classes */
+/* Utility Classes Created by Brad Traversy */
 .container {
   max-width: 1180px;
   text-align: center;
@@ -61,6 +76,49 @@ img {
 
 .lead {
   font-size: 1.3rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 1rem;
+  color: #fff;
+  display: inline-block; /* on it's own line */
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--primary-color-hover);
+  }
+
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: var(-secondary-color-hover);
+}
+
+/* text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+.mb {
+  margin-bottom: 1rem;
+}
+
+.mt {
+  margin-top: 1rem;
 }
 /* Navigation */
 nav {
