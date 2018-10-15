@@ -41,6 +41,19 @@ a {
   font-size: 2rem;
 }
 
+section#entertainment {
+  background: url('../img/section-bg.jpg') no-repeat bottom/cover;
+  padding: 10rem 0;
+}
+
+.gift-cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  /* or grid-template-columns: repeat(2, 1fr); and 1fr 1fr; ARE SAME THING */
+  text-align: left;
+  /* it's in a container and all containers are center aligned by default */
+}
 /* Showcase */
 #showcase {
   margin:0;
@@ -66,6 +79,27 @@ a {
   font-size 2rem;
 }
 
+/* Footer */
+footer .footer-cols {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 14px;
+}
+
+footer .footer-cols ul li:first-child {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+}
+
+footer .footer-bottom {
+  background: #333;
+  padding: 1rem;
+}
 /* Utility Classes Created by Brad Traversy */
 .container {
   max-width: 1180px;
@@ -76,6 +110,10 @@ a {
 
 .lead {
   font-size: 1.3rem;
+}
+
+.text-center { /*for the footer copyright */
+  text-align: center;
 }
 
 /* Buttons */
@@ -113,6 +151,12 @@ a {
 .text-light {
   color: var(--light-color);
 }
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
+
 .mb {
   margin-bottom: 1rem;
 }
