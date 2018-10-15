@@ -89,7 +89,7 @@ footer .footer-cols {
   font-size: 14px;
 }
 
-footer .footer-cols ul li:first-child {
+footer .footer-cols ul li:first-child { /*selects  titles */
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
   border-bottom: #444 solid 1px;
@@ -272,6 +272,22 @@ nav a#openup {
 
 .cf {
   zoom: 1;
+}
+
+@media screen and (max-width:780px) {
+  .gift-cards {
+    grid-template-columns: 1fr; /* stacks to one column on phones */
+  }
+
+  footer .footer-cols {
+    display: none; /* cancels display of footer columns on phones */
+  }
+}
+
+@media screen and (max-height: 580px) {
+  #showcase p.lead {
+    display: none; /* cancels display of footer on landscape
+  }
 }
 
 /* For IE 6/7 (trigger hasLayout) */
